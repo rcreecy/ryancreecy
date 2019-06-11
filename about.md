@@ -4,15 +4,6 @@ title: About
 permalink: /about.html
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+My name is Ryan Creecy. I am a Enterprise Technical Support Engineer with the well known anti-virus and cyber-security company, McAfee. I spend my day's working on large scale networks, ensuring that valid protection is in place for the newest threats, vulnerabilities, addressing live malware campaigns, and doing triage-level software troubleshooting/analysis. My person interests overlap this well, as I spend a lot of my free time doing web-dev projects, playing with Javascript (Electron enthusiast) and Python, as well as Reverse Engineering new malwares on the scene and pentesting projects (Such as Hack-The-Box). The vast majority of my posts reflect my personal side and interests.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I married the love of my life in August 2017, and have an awesome 18mo son who grows and develops more every day. Most of my time on the computer at home, he sits on my lap. I look forward to the day that he gets to write out his first "Hello, World" program.
