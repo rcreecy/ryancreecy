@@ -5,8 +5,7 @@
 layout: home
 ---
 
-### Welcome
-
 ```javascript
-console.log("Cybersecurity is important");
+console.log("What is this site for?");
 ```
+This site exists to document and output my learning and growth experience as a Technical Support Engineer / Cybersecurity Enthusiast. I entered the professional field in November, 2018; with a large personal intrest throughout my life. I document my ramblings and experiences here, as well as guides for what I have learned. IT is a field where a majority of the people working in it, learn best through hands on experience. I am no exception to this rule, and also find that teaching and documenting also assist in my understanding of concepts. Nothing here should be taken as perfect or real, and the quality of results is not guaranteed. But if it's not fun, I probably won't post it.
