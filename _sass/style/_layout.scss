@@ -275,12 +275,12 @@ img.headshot {
 
 .tag {
   background: #232323;
-  border-radius: 3px;
+  border: solid 1px white;
   color: rgb(243, 243, 243);
   display: inline-block;
   height: 26px;
   line-height: 26px;
-  padding: 0 20px 0 23px;
+  padding: 0 10px 0 10px;
   position: relative;
   margin: 0 10px 10px 0;
   text-decoration: none;
@@ -288,6 +288,6 @@ img.headshot {
 }
 
 .tag:hover {
-  background-color: #3a17ff;
-  color: white;
+  background-color: #b8b8b8;
+  color: black;
 }
