@@ -100,12 +100,11 @@
   }
 }
 
-.headshot {
-  display: block;
-  height: 60%;
-  width: 60%;
-  align-content: center;
+img.headshot {
+  object-fit: cover;
   border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
 
 /**
