@@ -18,6 +18,7 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+  <h4>Tags:</h4>
   <span><ul class="tags">
       {% for tag in page.tags %}
       {% capture tag_name %}{{ tag }}{% endcapture %}
