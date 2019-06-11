@@ -4,9 +4,7 @@ layout: default
 
 <article class="page">
   <h1>{{ page.title }}</h1>
-  <div class="entry">
-    
-    <h2>Archive</h2>
+  <div class="entry"><ul class="tags">
 {% capture temptags %}
   {% for tag in site.tags %}
     {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
@@ -16,7 +14,7 @@ layout: default
 {% for temptag in sortedtemptags %}
   {% assign tagitems = temptag | split: '#' %}
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
-  <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
-{% endfor %}  
+  <a href="/tag/{{ tagname }}"><li class="tag">{{ tagname }}</li></a>
+{% endfor %}  </ul>
   </div>
 </article>
