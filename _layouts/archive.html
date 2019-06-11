@@ -15,6 +15,21 @@ layout: default
   {% assign tagitems = temptag | split: '#' %}
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
   <a href="/tag/{{ tagname }}"><li class="tag">{{ tagname }}</li></a>
-{% endfor %}  </ul>
+{% endfor %}  
+</ul>
+{% assign previousYear = "" %}
+    {% for post in site.posts %}
+      {% capture currentYear %}
+        {{ post.date | date: "%Y" }}
+      {% endcapture %}
+    
+      {% if currentYear != previousYear %}
+        {% assign previousYear = currentYear %}
+        <h3>{{ currentYear }}</h3>
+      {% endif %}
+    
+      {{ post.date | date: '%B %d, %Y' }} - <a style="font-weight: bold" href="{{ post.url }}">{{ post.title }}</a>
+      <br />
+    {% endfor %}  
   </div>
 </article>
