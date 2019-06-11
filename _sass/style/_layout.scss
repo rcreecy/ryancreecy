@@ -213,10 +213,12 @@ img.headshot {
 .post-link {
   display: block;
   @include relative-font-size(1.25);
-  margin-bottom: -3px;
 }
 
-
+.excerpt {
+  padding-top: 0px;
+  margin-top: 0px;
+}
 
 /**
  * Posts
