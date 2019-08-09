@@ -21,9 +21,6 @@ layout: default
           </a>
         </h3>
           <p class="excerpt">{{ post.excerpt }}</p>
-          {% if post.excerpt != post.content %}
-          <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
-          {% endif %}
       </li>
       {%- endfor -%}
     </ul>
