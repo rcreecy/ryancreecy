@@ -4,11 +4,11 @@ title:  "VirusTotal Powershell Lookup"
 date:   2019-06-10 23:11:20 -0500
 tags: powershell project cyber-security
 ---
-### Available [here](https://github.com/rcreecy/vtlookup/tree/master)
+### [Check it out](https://github.com/rcreecy/vtlookup/tree/master)
+This tool provides a straightforward and ASCII happy powershell GUI to interact with Virustotal, through the API created by David B Heise and improved upon by [Dave Hull](https://github.com/davehull/VirusTotalShell)
+<!--more-->
 ![Interface](https://raw.githubusercontent.com/rcreecy/vtlookup/master/readme/gui.png)
 ![Example Lookup](https://raw.githubusercontent.com/rcreecy/vtlookup/master/readme/use.PNG)
-
-This tool provides a straightforward and ASCII happy powershell GUI to interact with Virustotal, through the API created by David B Heise and improved upon by [Dave Hull](https://github.com/davehull/VirusTotalShell)
 
 The main purpose is to learn more about working with REST apis in powershell, as well as parsing returned data and overall understanding of building a valid and functional module.
 
