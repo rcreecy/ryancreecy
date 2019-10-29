@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "xRDP on MacOS Mojave"
-date:   2019-06-10 23:11:20 -0500
-tags: tutorial technology project
+date:   2019-10-28 23:00:00 -0500
+tags: tutorial technology
 ---
-Building xRDP on MacOS Mojave 
-
+# What is xRDP
+xRDP is an awesome utility developed by NeutinoLabs for allowing RDP protocol remote sessions to Linux/Unix operating systems. There's little to no documentation on the proper way to set it up on a MacOS machine, as I don't believe there is much demand for it. However, having a Mac in a remote lab can be extremely useful for many purposes, and this is a way to ditch the extra VNC viewer application while you're at it.
+<!--more-->
 # Step 1 - Setting up the build environment
 Install xCode Command Line Tools (This may already be installed) [v2354]
 ```
@@ -25,7 +26,6 @@ brew install openssl
 
 Once OpenSSL is installed properly, you must export CPPFLAGS to allow the compiler to find it.
 ```
-<!-- echo 'export PATH="/usr/local/opt/openssl/bin:PATH"' >> ~/.bash_profile -->
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 ```
 
@@ -38,7 +38,7 @@ brew install nasm
 ```
 
 Install xQuartz [v2.7.11]
-https://www.xquartz.org/
+[https://www.xquartz.org/](https://www.xquartz.org/)
 > After install, it will be required to log out and log back in
 
 You may also want to make a folder to keep things organized and to work out of.
@@ -55,7 +55,9 @@ Configure System Preferences for VNC Sharing
 
 # Step 2 - Download the correct xRDP Packages
 You will need both xRDP and xOrgxRDP from http://xrdp.org/ (tar.gz packages)
+
 [XRDP Releases](https://github.com/neutrinolabs/xrdp/releases) - v0.9.11
+
 [XORDXRDP Releases](https://github.com/neutrinolabs/xorgxrdp/releases) - v0.2.11
 
 Once downloaded, pull them into your build directory and extract them.
@@ -206,8 +208,9 @@ Otherwise...
 
 # Note about encryption
 xRDP comes with a standard x509 2048bit RSA key/cert pair.
-I highly encourage following their simple documentation to replace them with your own. I simply replace the current ones in `/etc/xrdp/` with my own, after renaming them to add a .bak extension. This prevents having to path out in the xrdp.ini (Since it appears to only honor certs and keys in the same directory anyways)
+I highly encourage following their simple documentation to replace them with your own. I simply replace the current ones in `/etc/xrdp/` with my own, after renaming them to add a .bak extension with a self-signed 4096bit certificate. This prevents having to path out in the xrdp.ini (Since it appears to only honor certs and keys in the same directory anyways). The golden rule is, if an application provides you a certificate but allows you to substitute your own - DO IT.
 
 https://github.com/neutrinolabs/xrdp/wiki/TLS-security-layer
 
-## Good luck, and I hope this tutorial helps!
+# Final words
+There is very little current documentation on doing this. The layout/tutorial here is what I found works for me, and I have tried it on a few systems. It is not very scalable, but I think that weighs into why this isn't documented out much anyways. This is something you may have in a small lab, but not a production or enterprise environment. But it is cool, and for the right use-case, fantastic!
