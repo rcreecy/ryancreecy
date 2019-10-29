@@ -58,7 +58,7 @@ You will need both xRDP and xOrgxRDP from http://xrdp.org/ (tar.gz packages)
 
 [XRDP Releases](https://github.com/neutrinolabs/xrdp/releases) - v0.9.11
 
-[XORDXRDP Releases](https://github.com/neutrinolabs/xorgxrdp/releases) - v0.2.11
+[XORGXRDP Releases](https://github.com/neutrinolabs/xorgxrdp/releases) - v0.2.11
 
 Once downloaded, pull them into your build directory and extract them.
 ```
