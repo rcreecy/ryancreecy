@@ -5,7 +5,7 @@ date:   2019-10-28 23:00:00 -0500
 tags: tutorial technology
 ---
 # What is xRDP
-xRDP is an awesome utility developed by NeutinoLabs for allowing RDP protocol remote sessions to Linux/Unix operating systems. There's little to no documentation on the proper way to set it up on a MacOS machine, as I don't believe there is much demand for it. However, having a Mac in a remote lab can be extremely useful for many purposes, and this is a way to ditch the extra VNC viewer application while you're at it.
+xRDP is an awesome utility developed by [NeutrinoLabs](https://github.com/neutrinolabs/) for allowing RDP protocol remote sessions to Linux/Unix operating systems. There's little to no documentation on the proper way to set it up on a MacOS machine, as I don't believe there is much demand for it. However, having a Mac in a remote lab can be extremely useful for many purposes, and this is a way to ditch the extra VNC viewer application while you're at it.
 <!--more-->
 # Step 1 - Setting up the build environment
 Install xCode Command Line Tools (This may already be installed) [v2354]
@@ -93,7 +93,7 @@ sudo make install
 > If you get a failure here, make sure you restarted your session after installing your xQuartz X11 server
 
 # Configure xRDP to function properly
-You've made it this far. We now had xRDP installed and in a semi-ready state. The next step is to setup the configuration for Mac specific settings for how we will have to be connecting.
+You've made it this far! We now had xRDP installed and in a semi-ready state. The next step is to setup the configuration for Mac specific settings for how we will have to be connecting.
 
 Let's open our xrdp.ini file to set everything up correctly!
 ```
@@ -142,8 +142,8 @@ username=ask
 password=ask
 ```
 
-We are only worried about vnc-any in this instance, as that is the only one I have been able to get to function properly. We are also going to reference libvnc.dylib, not libvnc.so.
-This is the changes sessions section. I just comment out any I won't be using and make the necessary changes for my environment.
+We are only worried about `vnc-any` in this instance, as that is the only one I have been able to get to function properly. We are also going to reference libvnc.dylib, not libvnc.so.
+Below is the changed sessions section. I just comment out any I won't be using and make the necessary changes for my environment.
 
 ```
 #[Xorg]
