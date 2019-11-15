@@ -4,7 +4,6 @@ title:  "xRDP on MacOS Mojave"
 date:   2019-10-28 23:00:00 -0500
 tags: tutorial technology
 ---
-### What is xRDP
 xRDP is an awesome utility developed by [NeutrinoLabs](https://github.com/neutrinolabs/) for allowing RDP protocol remote sessions to Linux/Unix operating systems. There's little to no documentation on the proper way to set it up on a MacOS machine, as I don't believe there is much demand for it. However, having a Mac in a remote lab can be extremely useful for many purposes, and this is a way to ditch the extra VNC viewer application while you're at it.
 <!--more-->
 ### Step 1 - Setting up the build environment
