@@ -213,6 +213,7 @@ img.headshot {
 .post-link {
   display: block;
   @include relative-font-size(1.25);
+  font-weight: bold;
 }
 
 .excerpt {
